@@ -7,6 +7,7 @@
 ## Overview
 
 In this session, using Django REST Framework, deploying an API which uses Docker as containers.
+Added, PostgreSQL database now used. Permission restrictions added, user only can post and edit, others are read only.
 
 ## Getting Started
 

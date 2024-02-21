@@ -86,3 +86,9 @@ class MetalTests(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
         metals = Metal.objects.all()
         self.assertEqual(len(metals), 0)
+
+    def test_authentication_required(self):
+        self.client.logout()
+        url = reverse("metal_list")
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
