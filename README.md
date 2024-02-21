@@ -1,6 +1,6 @@
-# LAB - Class 31
+# LAB - Class 32
 
-## Project: Django REST Framework & Docker
+## Project: Permissions & Postgresql
 
 ## Author: Bradley Hower
 
